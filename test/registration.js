@@ -2,6 +2,19 @@ var request = require('supertest');
 var app = require('../app');
 var models = require('../models');
 
+var child_process = require('child_process');
+
+var check_for_inkscape = function() {
+  try {
+    child_process.execSync('which inkscape');
+  } catch(err) {
+    console.warn("Skipping tests that require Inkscape.");
+    return false;
+  }
+  return true;
+}
+var inkscape_found = (check_for_inkscape());
+
 describe('registration', function() {
   var agent = request.agent(app);
 
@@ -415,6 +428,9 @@ describe('registration', function() {
   });
 
   it('should print badge', function(done) {
+    if (!inkscape_found) {
+      this.skip();
+    };
     agent.get('/desk/badge?regida=1&regidb=2')
     .expect(200)
     .expect(/%PDF-1./)
@@ -455,6 +471,4 @@ describe('registration', function() {
     .expect(/admin@regcfp/)
     .end(done);
   });
-
-
 });
