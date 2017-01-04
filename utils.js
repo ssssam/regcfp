@@ -7,7 +7,17 @@ var User = models.User;
 var Email = models.Email;
 
 var extend = require('util')._extend;
-var countries = require('country-data').countries;
+
+if (process.env.NODE_ENV == 'test') {
+  var countries = {
+    'all': {
+      'TEST1': { name: 'Test Country 1' },
+      'TEST2': { name: 'Test Country 2' }
+    }
+  }
+} else {
+  var countries = require('country-data').countries;
+};
 
 function get_permission_checker(permission) {
   var required = permission.split('/');
