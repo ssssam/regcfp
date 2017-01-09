@@ -1,5 +1,7 @@
 "use strict";
 
+var Promise = require('bluebird');
+
 var config = require('../configuration');
 
 function get_amount_string(amounts) {
