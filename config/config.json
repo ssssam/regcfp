@@ -26,8 +26,7 @@
     "listen": {
       "http": {
         "enabled": true,
-        "listenip": "127.0.0.1",
-        "port": 3000
+        "listenip": "0.0.0.0"
       },
       "https": {
         "enabled": false,

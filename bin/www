@@ -48,7 +48,7 @@ if(config.listen.https.enabled) {
 
 function startListening() {
   if(config.listen.http.enabled) {
-    servers.http.listen(config.listen.http.port,
+    servers.http.listen(process.env.PORT || config.listen.http.port,
                       config.listen.http.listenip);
   }
   if(config.listen.https.enabled) {
