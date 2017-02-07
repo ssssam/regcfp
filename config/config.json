@@ -141,12 +141,12 @@
             "thu27-sun30": {
               "display_name": "Thu 27th Jul - Sun 30th Jul (4 nights)",
               "cost": 172,
-              "limit": 12
+              "limit": 4
             },
             "thu27-tue1": {
               "display_name": "Thu 27th Jul - Tue 1st Aug (6 nights)",
               "cost": 258,
-              "limit": 12
+              "limit": 20
             },
             "thu27-wed2": {
               "display_name": "Thu 27th Jul - Wed 2nd Aug (7 nights)",
@@ -156,12 +156,12 @@
             "fri28-sun30": {
               "display_name": "Fri 28th Jul - Sun 30th Jul (3 nights)",
               "cost": 129,
-              "limit": 12
+              "limit": 7
             },
             "fri28-wed2": {
               "display_name": "Fri 28th Jul - Wed 2nd Aug (6 nights)",
               "cost": 258,
-              "limit": 36
+              "limit": 1
             }
           },
           "message": [
