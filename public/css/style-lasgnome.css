@@ -1,5 +1,5 @@
 html{
-    background: url('http://las.gnome.org/wp-content/uploads/sites/8/2016/05/las-website-skyline-white-1.png')  50% 0 no-repeat fixed;
+    background: url('https://las.gnome.org/wp-content/uploads/sites/8/2016/05/las-website-skyline-white-1.png')  50% 0 no-repeat fixed;
 }
 
 body,
@@ -15,7 +15,7 @@ textarea {
 }
 
 #header {
-    background: transparent url('http://las.gnome.org/wp-content/uploads/sites/8/2016/05/las-website-skyline-bridge.png')  50% 100% no-repeat scroll;
+    background: transparent url('https://las.gnome.org/wp-content/uploads/sites/8/2016/05/las-website-skyline-bridge.png')  50% 100% no-repeat scroll;
     background-size: cover !important;
     height: 650px;
     margin: 0px !important;
