@@ -1,7 +1,7 @@
 {
   "production": {
     "theming": {
-      "theme": "gnome",
+      "theme": "lasgnome",
       "site_name": "TEST GUADEC 2017 registration",
       "event_name": "GUADEC 2017",
       "logo": ""
