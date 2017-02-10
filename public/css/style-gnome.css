@@ -28,7 +28,7 @@ body, .grid {
 }
 
 /* Fixes weird issue where links flash red */
-a, a:visited { color: #4a86cf; }
+a, a:visited !.main-navigation { color: #4a86cf; }
 
 a:hover { color: #53cfe8; }
 
