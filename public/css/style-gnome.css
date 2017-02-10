@@ -27,6 +27,11 @@ body, .grid {
   overflow: visible;
 }
 
+/* Fixes weird issue where links flash red */
+a, a:visited { color: #4a86cf; }
+
+a:hover { color: #53cfe8; }
+
 /* Override default regcfp style.css to give us <input> boxes that
  * can shrink when small screens are used.
  */
@@ -56,7 +61,7 @@ body, .grid {
 }
 
 .button:visited {
-  color: #5d396e;
+  color: #204a87;
 }
 
 
