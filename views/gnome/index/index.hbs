@@ -5,15 +5,15 @@
     <h2>Please log in</h2>
 
     <p>
-    Welcome to the GUADEC registration system. To use this registration and CfP system you need to login.
-    <br/>
-    This is a test instance; the login button will open a dialog that allows you to log in with any
-    email address.
+    Welcome to the GUADEC registration system. To use this registration and CfP
+    system you need to login.
     </p>
 
-    <a href="/#login" onclick="{{ login_buttons.login.onclick }}">
-        {{>button text="Log in" symbol="fa-sign-in"}}
-    </a>
+    <form>
+      <button {{{ login_buttons.login }}}>
+        <div class="button">{{>button text="Log in" symbol="fa-sign-in"}}</div>
+      </button>
+    </form>
 
 {{else}}
 

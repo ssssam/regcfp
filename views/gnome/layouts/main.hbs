@@ -58,11 +58,13 @@
               </li>
 
               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
-                {{#if session.currentUser}}
-                    <a href="/#logout" onclick="{{ login_buttons.logout.onclick }}">Log out</a>
-                {{else}}
-                    <a href="/#login" onclick="{{ login_buttons.login.onclick }}">Log in</a>
-                {{/if}}
+                <form>
+                  {{#if session.currentUser}}
+                    <button {{{ login_buttons.logout }}}>Log out</a>
+                  {{else}}
+                    <button {{{ login_buttons.login }}}>Log in</a>
+                   {{/if}}
+                </form>
               </li>
             </ul>
           </div>
@@ -97,6 +99,10 @@
                 enabled.
             </p>
         </noscript>
+
+        {{#if error}}
+          <div class="validation">Something went wrong: {{error}}.</div>
+        {{/if}}
 
         {{{ body }}}
 

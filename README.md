@@ -94,5 +94,4 @@ See `config/config.example.json` for a full example.
 Development tips
 ----------------
 
-To disable logging of every SQL statement on the console, set
-`database.logging` to `false` in your config.json file.
+See HACKING.md.
